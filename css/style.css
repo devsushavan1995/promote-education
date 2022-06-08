@@ -1024,6 +1024,7 @@ html .ui-button.ui-state-disabled:active {
 }
 .site-header .site-header__nav ul li .dropdown-submenu a:hover {
   background: var(--colorLightBg);
+  color:var(--colorPrimary);
 }
 .site-header .offcanvas-end {
   width: 100vw;
