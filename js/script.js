@@ -62,6 +62,8 @@ $(document).ready(function () {
   $("select").niceSelect();
   */
 
+  // All select inputs initialization
+  //Global Search Form select inputs
   $("#ateSelectCourse").select2({
     theme: "bootstrap-5",
   });
@@ -70,7 +72,18 @@ $(document).ready(function () {
     theme: "bootstrap-5",
   });
 
+  // College Lisiting page select inputs
+  $("#collegeLisitngSelectCourse").select2({
+    theme: "bootstrap-5",
+  });
+  $("#collegeLisitngSelectCity").select2({
+    theme: "bootstrap-5",
+  });
 
+  // College Single select input
+  $("#collegeSingleSelectCourse").select2({
+    theme: "bootstrap-5",
+  });
 
   //Click event to scroll to top
   $(".scroll-to-top-button").click(function () {
@@ -387,24 +400,6 @@ $(document).ready(function () {
     },
   });
 
-  // Product single page swiper gallery
-  var swiperThumb = new Swiper(".product-single-swiper-thumb", {
-    spaceBetween: 10,
-    slidesPerView: 4,
-    freeMode: true,
-    watchSlidesProgress: true,
-  });
-  var swiperThumbView = new Swiper(".product-single-swiper-view", {
-    spaceBetween: 10,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    thumbs: {
-      swiper: swiperThumb,
-    },
-  });
-
   // Testimonial Swiper
   var swiperTestimonial = new Swiper(".swiper-testimonial", {
     // Optional parameters
@@ -503,8 +498,8 @@ $(document).ready(function () {
 
     // Navigation arrows
     navigation: {
-      nextEl: ".swiper-button-next--testimonial",
-      prevEl: ".swiper-button-prev--testimonial",
+      nextEl: ".swiper-button-next--announcement",
+      prevEl: ".swiper-button-prev--announcement",
     },
   });
 
@@ -576,20 +571,6 @@ $(document).ready(function () {
       $("#min_price_2").val(ui.values[0]);
       $("#max_price_2").val(ui.values[1]);
     },
-  });
-
-  var productListingLayoutViewBtns = $(".product-listing__button-layout-view");
-  productListingLayoutViewBtns.each(function () {
-    $(this).on("click", function () {
-      $(".product-listing__button-layout-view").removeClass("active");
-      var getView = $(this).attr("data-view");
-      $(this).addClass("active");
-      if (getView === "list") {
-        $(".product-item-container").addClass("product-item-container--list-view");
-      } else {
-        $(".product-item-container").removeClass("product-item-container--list-view");
-      }
-    });
   });
 
   // Product single page accordion & Faqs page accordion
@@ -672,7 +653,7 @@ $(document).ready(function () {
           },
         });
       } else {
-        $(".swiper-slide")
+        $(".swiper-announement .swiper-slide")
           .not("[data-category='" + getDataTargetVal + "']")
           .addClass("non-swiper-slide")
           .removeClass("swiper-slide")
@@ -732,6 +713,27 @@ $(document).ready(function () {
             nextEl: ".swiper-button-next--announcement",
             prevEl: ".swiper-button-prev--announcement",
           },
+        });
+      }
+    });
+  });
+
+  // Colleges Lisiting view per column
+  var collegesListingViewBtns = $(".colleges-listing__button--grid-view");
+  var collegesListingItemContainer = $(".colleges-listing-section .college-item-container");
+  collegesListingViewBtns.each(function () {
+    $(this).on("click", function () {
+      $(".colleges-listing__button--grid-view").removeClass('active');
+      $(this).addClass('active');
+      var getGridVal = $(this).attr("data-grid");
+      if (getGridVal == 3) {
+        console.log("3 items per row");
+        collegesListingItemContainer.each(function () {
+          $(this).removeClass("col-xl-3").addClass("col-xl-4 items-grid-view-3");
+        });
+      } else {
+        collegesListingItemContainer.each(function () {
+          $(this).removeClass("col-xl-4 items-grid-view-3").addClass("col-xl-3");
         });
       }
     });

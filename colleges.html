@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png" />
+    <link rel="stylesheet" href="./assets/vendors/bootstrap-5.0.2-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/vendors/youtube-video-popup/youtube-overlay.css" />
+    <link rel="stylesheet" href="./assets/vendors/jquery-nice-select-master/css/nice-select.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css" />
+    <link rel="stylesheet" href="./assets/vendors/price-range-slider/price-range-slider.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Promote Education | Colleges</title>
+  </head>
+  <body class="colleges">
+    <!-- Site Header -->
+    <header class="site-header py-2 py-lg-0">
+      <div class="container">
+        <div class="site-header__inner-wrapper d-flex justify-content-between align-items-center align-items-lg-start">
+          <div class="d-flex align-items-center">
+            <a href="/" class="d-inline-block site-header__logo me-4">
+              <img src="./assets/images/logo.png" alt="logo" />
+            </a>
+          </div>
+          <div class="d-none d-lg-flex flex-column align-items-end">
+            <!-- Top Links -->
+            <nav class="site-header__top-links">
+              <ul class="top-links-menu d-flex">
+                <li><a href="#" class="d-inline-block text-uppercase bg--secondary">Free Career Counselling</a></li>
+                <li><a href="#" class="d-inline-block text-uppercase bg--primary">Ask Industry Experts</a></li>
+                <li><a href="#" class="d-inline-block text-uppercase bg--secondary">Franchise Opportunity</a></li>
+              </ul>
+            </nav>
+            <!-- Main Navigation Menu -->
+            <nav class="site-header__nav d-none d-lg-inline-block w-auto">
+              <ul class="d-flex justify-content-center align-items-center">
+                <li>
+                  <a href="javascript:void(0)" class="has-dropdown"
+                    >Who We Are<span class="ms-2 dropdown-icon"><i class="fa-solid fa-chevron-down"></i></span
+                  ></a>
+                  <ul class="dropdown-submenu">
+                    <li>
+                      <a href="#">We are</a>
+                    </li>
+                    <li>
+                      <a href="#">We believe</a>
+                    </li>
+                    <li>
+                      <a href="#">Why we</a>
+                    </li>
+                    <li>
+                      <a href="#">Our Team</a>
+                    </li>
+                    <li>
+                      <a href="#">Founder's Message</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="javascript:void(0)"
+                    >What We Do<span class="ms-2 dropdown-icon"><i class="fa-solid fa-chevron-down"></i></span
+                  ></a>
+                  <ul class="dropdown-submenu">
+                    <li>
+                      <a href="#">Career Counselling</a>
+                    </li>
+                    <li>
+                      <a href="#">Brain Matrix Test</a>
+                    </li>
+                    <li>
+                      <a href="#">Admission Guidance</a>
+                    </li>
+                    <li>
+                      <a href="#">Institutional Promotion</a>
+                    </li>
+                    <li>
+                      <a href="#">Loan Guardian Services</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="./colleges.html">Colleges</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">Map My Talent</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">CEST</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">Library</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">Contact Us</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="d-flex align-items-center d-lg-none">
+            <!-- <a href="javascript:void(0)" class="site-header__button--search me-2"><i class="bi bi-search"></i></a> -->
+            <a class="d-lg-none site-header__button--nav-toggler" data-bs-toggle="offcanvas" href="#offcanvasMobileNav" role="button" aria-controls="offcanvasMobileNav"><i class="bi bi-list"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="offcanvas offcanvas-end bg--primary" tabindex="-1" id="offcanvasMobileNav" aria-labelledby="offcanvasMobileNav">
+        <div class="offcanvas-header">
+          <div>&nbsp;</div>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="dropdown mt-3">
+            <nav class="site-header__mobile-nav">
+              <ul class="mobile-nav">
+                <li>
+                  <a href="javascript:void(0)" class="has-dropdown"
+                    >Who We Are<span><i class="fa-solid fa-plus"></i></span
+                  ></a>
+                  <ul class="dropdown-submenu">
+                    <li>
+                      <a href="#">We are</a>
+                    </li>
+                    <li>
+                      <a href="#">We believe</a>
+                    </li>
+                    <li>
+                      <a href="#">Why we</a>
+                    </li>
+                    <li>
+                      <a href="#">Our Team</a>
+                    </li>
+                    <li>
+                      <a href="#">Founder's Message</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="javascript:void(0)" class="has-dropdown"
+                    >What We Do<span><i class="fa-solid fa-plus"></i></span
+                  ></a>
+                  <ul class="dropdown-submenu">
+                    <li>
+                      <a href="#">Career Counselling</a>
+                    </li>
+                    <li>
+                      <a href="#">Brain Matrix Test</a>
+                    </li>
+                    <li>
+                      <a href="#">Admission Guidance</a>
+                    </li>
+                    <li>
+                      <a href="#">Institutional Promotion</a>
+                    </li>
+                    <li>
+                      <a href="#">Loan Guardian Services</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="./colleges.html">Colleges</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">Map My Talent</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">CEST</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">Library</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">Contact Us</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="site-content">
+      <!-- page title -->
+      <section class="page-title-section d-flex justify-content-center align-items-center">
+        <div class="container">
+          <h3 class="page-title text-center">Colleges</h3>
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb d-flex align-items-center justify-content-center p-0 mb-2 mb-lg-0">
+              <li class="breadcrumb-item"><a href="/">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page"><span>Colleges</span></li>
+            </ol>
+          </nav>
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+              <form action="#" class="search-form form pt-1 pt-lg-3 d-lg-block">
+                <div class="form__field mb-0 d-flex align-items-center justify-content-between bg--white p-1 position-relative">
+                  <input type="text" name="sf_inp_text" placeholder="Search for Colleges & Courses" class="bg-transparent border-0" required />
+                  <button class="button button-secondary text-nowrap">
+                    <span class="d-md-none"><i class="fa-solid fa-magnifying-glass"></i></span><span class="d-none d-md-inline-block">Search Now</span>
+                  </button>
+                  <i class="fa-solid fa-magnifying-glass d-none d-md-inline-block"></i>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Colleges Listing Section -->
+      <section class="colleges-listing-section section--py">
+        <div class="container">
+          <div class="colleges-listing__filter-wrapper mb-4 row align-items-center">
+            <div class="col-6 d-none d-xl-inline-block">
+              <a href="javascript:void(0)" class="colleges-listing__button--grid-view d-none d-xl-inline-block active me-2" data-grid="4"><img src="./assets/images/4x3-grid.svg" alt="4x3 Grid" /></a>
+              <a href="javascript:void(0)" class="colleges-listing__button--grid-view d-none d-xl-inline-block" data-grid="3"><img src="./assets/images/3x4-grid.svg" alt="3x4 Grid" /></a>
+            </div>
+            <div class="col-12 col-md-7 col-xl-6 d-flex justify-content-end">
+              <div class="col-6 col-xl-4 pe-2">
+                <select class="form-select w-100" id="collegeLisitngSelectCourse" data-placeholder="Select Course">
+                  <option></option>
+                  <option>Diploma in Pharmacy</option>
+                  <option>MBBS Courses</option>
+                  <option>Engineering Courses</option>
+                  <option>Hotel Management Courses</option>
+                  <option>B.Sc Nursing</option>
+                </select>
+              </div>
+              <div class="col-6 col-xl-4 ps-1">
+                <select class="form-select w-100" id="collegeLisitngSelectCity" data-placeholder="Select City">
+                  <option></option>
+                  <option>Kolkata</option>
+                  <option>Delhi</option>
+                  <option>Mumbai</option>
+                  <option>Chennai</option>
+                  <option>Nagpur</option>
+                  <option>Jaipur</option>
+                  <option>Chandigarh</option>
+                  <option>Patna</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="colleges-listing__main pt-3">
+            <div class="row">
+              <div class="col-12 col-sm-6 col-lg-4 col-xl-3 college-item-container">
+                <div class="college-item box-shadow border-radius overflow-hidden">
+                  <div class="college-item__header position-relative overflow-hidden">
+                    <div class="college-item__thumbnail" style="background-image: url(./assets/images/colleges-listing-pagetitle-bg.jpg)">
+                      <a href="./college-single.html" class="d-block w-100 h-100"></a>
+                    </div>
+                    <span class="college-item__location-badge px-2 py-1 text--xxs border-radius"><i class="fa-solid fa-location-dot me-1"></i>Kolkata, West Bengal</span>
+                  </div>
+                  <div class="college-item__body">
+                    <a href="./college-single.html" class="college-item__title">Acharya Institute of Technology</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-lg-4 col-xl-3 college-item-container">
+                <div class="college-item box-shadow border-radius overflow-hidden">
+                  <div class="college-item__header position-relative overflow-hidden">
+                    <div class="college-item__thumbnail" style="background-image: url(./assets/images/colleges-listing-pagetitle-bg.jpg)">
+                      <a href="./college-single.html" class="d-block w-100 h-100"></a>
+                    </div>
+                    <span class="college-item__location-badge px-2 py-1 text--xxs border-radius"><i class="fa-solid fa-location-dot me-1"></i>Kolkata, West Bengal</span>
+                  </div>
+                  <div class="college-item__body">
+                    <a href="./college-single.html" class="college-item__title">Acharya Institute of Technology</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-lg-4 col-xl-3 college-item-container">
+                <div class="college-item box-shadow border-radius overflow-hidden">
+                  <div class="college-item__header position-relative overflow-hidden">
+                    <div class="college-item__thumbnail" style="background-image: url(./assets/images/colleges-listing-pagetitle-bg.jpg)">
+                      <a href="./college-single.html" class="d-block w-100 h-100"></a>
+                    </div>
+                    <span class="college-item__location-badge px-2 py-1 text--xxs border-radius"><i class="fa-solid fa-location-dot me-1"></i>Kolkata, West Bengal</span>
+                  </div>
+                  <div class="college-item__body">
+                    <a href="./college-single.html" class="college-item__title">Acharya Institute of Technology</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-lg-4 col-xl-3 college-item-container">
+                <div class="college-item box-shadow border-radius overflow-hidden">
+                  <div class="college-item__header position-relative overflow-hidden">
+                    <div class="college-item__thumbnail" style="background-image: url(./assets/images/colleges-listing-pagetitle-bg.jpg)">
+                      <a href="./college-single.html" class="d-block w-100 h-100"></a>
+                    </div>
+                    <span class="college-item__location-badge px-2 py-1 text--xxs border-radius"><i class="fa-solid fa-location-dot me-1"></i>Kolkata, West Bengal</span>
+                  </div>
+                  <div class="college-item__body">
+                    <a href="./college-single.html" class="college-item__title">Acharya Institute of Technology</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-lg-4 col-xl-3 college-item-container">
+                <div class="college-item box-shadow border-radius overflow-hidden">
+                  <div class="college-item__header position-relative overflow-hidden">
+                    <div class="college-item__thumbnail" style="background-image: url(./assets/images/colleges-listing-pagetitle-bg.jpg)">
+                      <a href="./college-single.html" class="d-block w-100 h-100"></a>
+                    </div>
+                    <span class="college-item__location-badge px-2 py-1 text--xxs border-radius"><i class="fa-solid fa-location-dot me-1"></i>Kolkata, West Bengal</span>
+                  </div>
+                  <div class="college-item__body">
+                    <a href="./college-single.html" class="college-item__title">Acharya Institute of Technology</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-lg-4 col-xl-3 college-item-container">
+                <div class="college-item box-shadow border-radius overflow-hidden">
+                  <div class="college-item__header position-relative overflow-hidden">
+                    <div class="college-item__thumbnail" style="background-image: url(./assets/images/colleges-listing-pagetitle-bg.jpg)">
+                      <a href="./college-single.html" class="d-block w-100 h-100"></a>
+                    </div>
+                    <span class="college-item__location-badge px-2 py-1 text--xxs border-radius"><i class="fa-solid fa-location-dot me-1"></i>Kolkata, West Bengal</span>
+                  </div>
+                  <div class="college-item__body">
+                    <a href="./college-single.html" class="college-item__title">Acharya Institute of Technology</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-lg-4 col-xl-3 college-item-container">
+                <div class="college-item box-shadow border-radius overflow-hidden">
+                  <div class="college-item__header position-relative overflow-hidden">
+                    <div class="college-item__thumbnail" style="background-image: url(./assets/images/colleges-listing-pagetitle-bg.jpg)">
+                      <a href="./college-single.html" class="d-block w-100 h-100"></a>
+                    </div>
+                    <span class="college-item__location-badge px-2 py-1 text--xxs border-radius"><i class="fa-solid fa-location-dot me-1"></i>Kolkata, West Bengal</span>
+                  </div>
+                  <div class="college-item__body">
+                    <a href="./college-single.html" class="college-item__title">Acharya Institute of Technology</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-lg-4 col-xl-3 college-item-container">
+                <div class="college-item box-shadow border-radius overflow-hidden">
+                  <div class="college-item__header position-relative overflow-hidden">
+                    <div class="college-item__thumbnail" style="background-image: url(./assets/images/colleges-listing-pagetitle-bg.jpg)">
+                      <a href="./college-single.html" class="d-block w-100 h-100"></a>
+                    </div>
+                    <span class="college-item__location-badge px-2 py-1 text--xxs border-radius"><i class="fa-solid fa-location-dot me-1"></i>Kolkata, West Bengal</span>
+                  </div>
+                  <div class="college-item__body">
+                    <a href="./college-single.html" class="college-item__title">Acharya Institute of Technology</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-lg-4 col-xl-3 college-item-container">
+                <div class="college-item box-shadow border-radius overflow-hidden">
+                  <div class="college-item__header position-relative overflow-hidden">
+                    <div class="college-item__thumbnail" style="background-image: url(./assets/images/colleges-listing-pagetitle-bg.jpg)">
+                      <a href="./college-single.html" class="d-block w-100 h-100"></a>
+                    </div>
+                    <span class="college-item__location-badge px-2 py-1 text--xxs border-radius"><i class="fa-solid fa-location-dot me-1"></i>Kolkata, West Bengal</span>
+                  </div>
+                  <div class="college-item__body">
+                    <a href="./college-single.html" class="college-item__title">Acharya Institute of Technology</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-lg-4 col-xl-3 college-item-container">
+                <div class="college-item box-shadow border-radius overflow-hidden">
+                  <div class="college-item__header position-relative overflow-hidden">
+                    <div class="college-item__thumbnail" style="background-image: url(./assets/images/colleges-listing-pagetitle-bg.jpg)">
+                      <a href="./college-single.html" class="d-block w-100 h-100"></a>
+                    </div>
+                    <span class="college-item__location-badge px-2 py-1 text--xxs border-radius"><i class="fa-solid fa-location-dot me-1"></i>Kolkata, West Bengal</span>
+                  </div>
+                  <div class="college-item__body">
+                    <a href="./college-single.html" class="college-item__title">Acharya Institute of Technology</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-lg-4 col-xl-3 college-item-container">
+                <div class="college-item box-shadow border-radius overflow-hidden">
+                  <div class="college-item__header position-relative overflow-hidden">
+                    <div class="college-item__thumbnail" style="background-image: url(./assets/images/colleges-listing-pagetitle-bg.jpg)">
+                      <a href="./college-single.html" class="d-block w-100 h-100"></a>
+                    </div>
+                    <span class="college-item__location-badge px-2 py-1 text--xxs border-radius"><i class="fa-solid fa-location-dot me-1"></i>Kolkata, West Bengal</span>
+                  </div>
+                  <div class="college-item__body">
+                    <a href="./college-single.html" class="college-item__title">Acharya Institute of Technology</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-lg-4 col-xl-3 college-item-container">
+                <div class="college-item box-shadow border-radius overflow-hidden">
+                  <div class="college-item__header position-relative overflow-hidden">
+                    <div class="college-item__thumbnail" style="background-image: url(./assets/images/colleges-listing-pagetitle-bg.jpg)">
+                      <a href="./college-single.html" class="d-block w-100 h-100"></a>
+                    </div>
+                    <span class="college-item__location-badge px-2 py-1 text--xxs border-radius"><i class="fa-solid fa-location-dot me-1"></i>Kolkata, West Bengal</span>
+                  </div>
+                  <div class="college-item__body">
+                    <a href="./college-single.html" class="college-item__title">Acharya Institute of Technology</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="text-center">
+              <a href="#" class="college-listing__button--show-more button button-primary d-inline-block">
+                <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
+                Show More
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer bg--alternative-dark">
+      <div class="site-footer__top section--py bg--primary">
+        <div class="container">
+          <div class="quick-links-container d-grid">
+            <div class="link-container">
+              <a href="#" class="d-block">Login</a>
+            </div>
+            <div class="link-container">
+              <a href="#" class="d-block">Register</a>
+            </div>
+            <div class="link-container">
+              <a href="#" class="d-block">Login</a>
+            </div>
+            <div class="link-container">
+              <a href="#" class="d-block">Career</a>
+            </div>
+            <div class="link-container">
+              <a href="#" class="d-block">Download</a>
+            </div>
+            <div class="link-container">
+              <a href="#" class="d-block">Feedback</a>
+            </div>
+            <div class="link-container">
+              <a href="#" class="d-block">Media</a>
+            </div>
+            <div class="link-container">
+              <a href="#" class="d-block">ERP Login</a>
+            </div>
+            <div class="link-container">
+              <a href="#" class="d-block">Privacy Policy</a>
+            </div>
+            <div class="link-container">
+              <a href="#" class="d-block">Terms & Condition</a>
+            </div>
+            <div class="link-container">
+              <a href="#" class="d-block">Sitemap</a>
+            </div>
+            <div class="link-container">
+              <a href="#" class="d-block">Faqs</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="site-footer__middle section--py">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-6 col-lg-4 col-xl-4 text-center text-md-start mb-4 mb-lg-0 mt-3 mt-md-0 site-footer__col">
+              <h4 class="text--light mb-3 mb-xl-4 text-uppercase">Top Universities in India</h4>
+              <ul class="site-footer-menu mt-lg-1 mt-xl-2">
+                <li class="site-footer-menu__item">
+                  <a href="#" class="site-footer-menu__item--link">Techno India University</a>
+                </li>
+                <li class="site-footer-menu__item">
+                  <a href="#" class="site-footer-menu__item--link">Guru Nanak Institute of Technology</a>
+                </li>
+                <li class="site-footer-menu__item">
+                  <a href="#" class="site-footer-menu__item--link">KPC Medical College and Hospital</a>
+                </li>
+                <li class="site-footer-menu__item">
+                  <a href="#" class="site-footer-menu__item--link">J. G. Institute of Medical Sciences and Hospital</a>
+                </li>
+                <li class="site-footer-menu__item">
+                  <a href="#" class="site-footer-menu__item--link">Eminent College of Pharmaceutical Technology</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 col-xl-4 text-center text-md-start mb-4 mb-lg-0 mt-3 mt-md-0 mt-xl-0 site-footer__col">
+              <h4 class="text--light mb-3 mb-xl-4 text-uppercase">Top Colleges in India</h4>
+              <ul class="site-footer-menu mt-lg-1 mt-xl-2">
+                <li class="site-footer-menu__item">
+                  <a href="#" class="site-footer-menu__item--link">St. Xavier's College</a>
+                </li>
+                <li class="site-footer-menu__item">
+                  <a href="./contact-us.html" class="site-footer-menu__item--link">NIPS Hotel Management</a>
+                </li>
+                <li class="site-footer-menu__item">
+                  <a href="#" class="footer-menu__item--link">International Institute of Hotel Management</a>
+                </li>
+                <li class="site-footer-menu__item">
+                  <a href="#" class="footer-menu__item--link">G. N. Institute of Pharmaceutical Science & Technology</a>
+                </li>
+                <li class="site-footer-menu__item">
+                  <a href="#" class="footer-menu__item--link">BCDA College of Pharmacy and Technology</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-12 col-md-12 col-lg-4 col-xl-4 text-center text-md-start mb-md-4 mt-md-3 mt-lg-0 mb-md-0 pe-lg-4 site-footer__col">
+              <div class="d-md-flex d-lg-inline-block">
+                <a href="#" class="site-footer__logo d-inline-block mb-4">
+                  <img src="./assets/images/logo.png" alt="Logo" />
+                </a>
+                <div class="ps-md-4 ps-lg-0">
+                  <p class="text--light fw--semibold mb-4">11D/31/1, Street Number 1111, New town, Kolkata, West Bengal - 700156. QUBE.( 10TH FLOOR)</p>
+                  <p><a href="tel:9831842665" class="site-footer__contact--phone fw--semibold">9831842665</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <div class="container">
+          <div class="row justify-content-center justify-content-lg-between align-items-center">
+            <p class="text--light-muted mb-0 text-center text--sm d-inline-block w-auto mb-2 mb-lg-0">Copyright © 2022 by Promote Education</p>
+            <ul class="social-icons d-flex w-auto">
+              <li>
+                <a href="#" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Toast Notification -->
+      <div class="position-fixed p-3 toast-container" style="z-index: 2000">
+        <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+          <span class="status-highlighter"></span>
+          <div class="toast-header justify-content-end px-2 pt-2 pb-0">
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+          <div class="toast-body p-3">
+            <span class="toast-body__icon me-2"></span>
+            <span class="toast-body__text text--heading fw--semibold"></span>
+          </div>
+        </div>
+      </div>
+
+      <a href="javascript:void(0)" class="scroll-to-top-button"><i class="fa-solid fa-chevron-up"></i></a>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
+    <script src="./assets/vendors/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/2d537fef4a.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-image-zoom/js-image-zoom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+    <script src="./assets/vendors/youtube-video-popup/youtube-overlay.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.counterup@2.1.0/jquery.counterup.min.js"></script>
+    <script src="./assets/vendors/jquery-nice-select-master/js/jquery.nice-select.min.js"></script>
+    <script src="./assets/vendors/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <script src="./assets/vendors/price-range-slider/price-range-slider.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

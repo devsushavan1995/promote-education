@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png" />
+    <link rel="stylesheet" href="./assets/vendors/bootstrap-5.0.2-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/vendors/youtube-video-popup/youtube-overlay.css" />
+    <link rel="stylesheet" href="./assets/vendors/jquery-nice-select-master/css/nice-select.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css" />
+    <link rel="stylesheet" href="./assets/vendors/price-range-slider/price-range-slider.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Promote Education | College Single</title>
+  </head>
+  <body class="college-single">
+    <!-- Site Header -->
+    <header class="site-header py-2 py-lg-0">
+      <div class="container">
+        <div class="site-header__inner-wrapper d-flex justify-content-between align-items-center align-items-lg-start">
+          <div class="d-flex align-items-center">
+            <a href="/" class="d-inline-block site-header__logo me-4">
+              <img src="./assets/images/logo.png" alt="logo" />
+            </a>
+          </div>
+          <div class="d-none d-lg-flex flex-column align-items-end">
+            <!-- Top Links -->
+            <nav class="site-header__top-links">
+              <ul class="top-links-menu d-flex">
+                <li><a href="#" class="d-inline-block text-uppercase bg--secondary">Free Career Counselling</a></li>
+                <li><a href="#" class="d-inline-block text-uppercase bg--primary">Ask Industry Experts</a></li>
+                <li><a href="#" class="d-inline-block text-uppercase bg--secondary">Franchise Opportunity</a></li>
+              </ul>
+            </nav>
+            <!-- Main Navigation Menu -->
+            <nav class="site-header__nav d-none d-lg-inline-block w-auto">
+              <ul class="d-flex justify-content-center align-items-center">
+                <li>
+                  <a href="javascript:void(0)" class="has-dropdown"
+                    >Who We Are<span class="ms-2 dropdown-icon"><i class="fa-solid fa-chevron-down"></i></span
+                  ></a>
+                  <ul class="dropdown-submenu">
+                    <li>
+                      <a href="#">We are</a>
+                    </li>
+                    <li>
+                      <a href="#">We believe</a>
+                    </li>
+                    <li>
+                      <a href="#">Why we</a>
+                    </li>
+                    <li>
+                      <a href="#">Our Team</a>
+                    </li>
+                    <li>
+                      <a href="#">Founder's Message</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="javascript:void(0)"
+                    >What We Do<span class="ms-2 dropdown-icon"><i class="fa-solid fa-chevron-down"></i></span
+                  ></a>
+                  <ul class="dropdown-submenu">
+                    <li>
+                      <a href="#">Career Counselling</a>
+                    </li>
+                    <li>
+                      <a href="#">Brain Matrix Test</a>
+                    </li>
+                    <li>
+                      <a href="#">Admission Guidance</a>
+                    </li>
+                    <li>
+                      <a href="#">Institutional Promotion</a>
+                    </li>
+                    <li>
+                      <a href="#">Loan Guardian Services</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="./colleges.html">Colleges</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">Map My Talent</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">CEST</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">Library</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">Contact Us</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="d-flex align-items-center d-lg-none">
+            <!-- <a href="javascript:void(0)" class="site-header__button--search me-2"><i class="bi bi-search"></i></a> -->
+            <a class="d-lg-none site-header__button--nav-toggler" data-bs-toggle="offcanvas" href="#offcanvasMobileNav" role="button" aria-controls="offcanvasMobileNav"><i class="bi bi-list"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="offcanvas offcanvas-end bg--primary" tabindex="-1" id="offcanvasMobileNav" aria-labelledby="offcanvasMobileNav">
+        <div class="offcanvas-header">
+          <div>&nbsp;</div>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="dropdown mt-3">
+            <nav class="site-header__mobile-nav">
+              <ul class="mobile-nav">
+                <li>
+                  <a href="javascript:void(0)" class="has-dropdown"
+                    >Who We Are<span><i class="fa-solid fa-plus"></i></span
+                  ></a>
+                  <ul class="dropdown-submenu">
+                    <li>
+                      <a href="#">We are</a>
+                    </li>
+                    <li>
+                      <a href="#">We believe</a>
+                    </li>
+                    <li>
+                      <a href="#">Why we</a>
+                    </li>
+                    <li>
+                      <a href="#">Our Team</a>
+                    </li>
+                    <li>
+                      <a href="#">Founder's Message</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="javascript:void(0)" class="has-dropdown"
+                    >What We Do<span><i class="fa-solid fa-plus"></i></span
+                  ></a>
+                  <ul class="dropdown-submenu">
+                    <li>
+                      <a href="#">Career Counselling</a>
+                    </li>
+                    <li>
+                      <a href="#">Brain Matrix Test</a>
+                    </li>
+                    <li>
+                      <a href="#">Admission Guidance</a>
+                    </li>
+                    <li>
+                      <a href="#">Institutional Promotion</a>
+                    </li>
+                    <li>
+                      <a href="#">Loan Guardian Services</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="./colleges.html">Colleges</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">Map My Talent</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">CEST</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">Library</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">Contact Us</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="site-content">
+      <!-- page title -->
+      <section class="page-title-section d-flex justify-content-center align-items-center" style="background-image: url(./assets/images/colleges-listing-pagetitle-bg.jpg)">
+        <div class="container">
+          <h3 class="page-title text-center">College Title</h3>
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb d-flex align-items-center justify-content-center p-0 mb-2 mb-lg-0">
+              <li class="breadcrumb-item"><a href="/">Home</a></li>
+              <li class="breadcrumb-item"><a href="./colleges.html">Colleges</a></li>
+              <li class="breadcrumb-item active" aria-current="page"><span>College Title</span></li>
+            </ol>
+          </nav>
+        </div>
+      </section>
+      <!-- College Single Section -->
+      <section class="section college-single-section section--py bg--light">
+        <div class="container">
+          <div class="row pb-5">
+            <!-- College Single Tabs -->
+            <div class="col-12 col-lg-9">
+              <div class="college-single__inner-wrapper bg--white">
+                <ul class="nav nav-pills mb-3 flex-nowrap" id="college-single-tab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-about-tab" data-bs-toggle="pill" data-bs-target="#pills-about" type="button" role="tab" aria-controls="pills-about" aria-selected="true">
+                      <span class="icon"><i class="fa-solid fa-building-columns"></i></span>
+                      <span class="text">About</span>
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-admission-tab" data-bs-toggle="pill" data-bs-target="#pills-admission" type="button" role="tab" aria-controls="pills-admission" aria-selected="false">
+                      <span class="icon"><i class="fa-solid fa-ticket"></i></span>
+                      <span class="text">Admission</span>
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-placement-tab" data-bs-toggle="pill" data-bs-target="#pills-placement" type="button" role="tab" aria-controls="pills-placement" aria-selected="false">
+                      <span class="icon"><i class="fa-solid fa-briefcase"></i></span>
+                      <span class="text">placement</span>
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-courses-tab" data-bs-toggle="pill" data-bs-target="#pills-courses" type="button" role="tab" aria-controls="pills-courses" aria-selected="false">
+                      <span class="icon"><i class="fa-solid fa-book"></i></span>
+                      <span class="text">Courses</span>
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-ranking-tab" data-bs-toggle="pill" data-bs-target="#pills-ranking" type="button" role="tab" aria-controls="pills-ranking" aria-selected="false">
+                      <span class="icon"><i class="fa-solid fa-ranking-star"></i></span>
+                      <span class="text">Ranking</span>
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-review-tab" data-bs-toggle="pill" data-bs-target="#pills-review" type="button" role="tab" aria-controls="pills-review" aria-selected="false">
+                      <span class="icon"><i class="fa-solid fa-thumbs-up"></i></span>
+                      <span class="text">Review</span>
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-fee-structure-tab" data-bs-toggle="pill" data-bs-target="#pills-fee-structure" type="button" role="tab" aria-controls="pills-fee-structure" aria-selected="false">
+                      <span class="icon"><i class="fa-solid fa-table-cells"></i></span>
+                      <span class="text">Fee Structure</span>
+                    </button>
+                  </li>
+                </ul>
+                <!-- College Single Tabs Content -->
+                <div class="tab-content pt-4 mb-4" id="pills-tabContent">
+                  <div class="tab-pane fade show active" id="pills-about" role="tabpanel" aria-labelledby="pills-about-tab">
+                    <div class="about__overview">
+                      <p>Each year the country is witnessing a rise in the requirement for graduates and specialists in Law. The was established during the period (2018-2019). The college is affiliated to the Karnataka State Law University. It has been approved by the Bar Council of India, New Delhi.</p>
+                    </div>
+                    <div class="about__more-content">
+                      <p>The college has a vision to make Legal education available to all aspiring students through excellent support and opportunities. The college education system has taken the responsibility to encourage a sense of social, moral and ethical responsibility among the students.</p>
+                      <p>The system tries to build a sense of responsibility in students and teach them the universal nature of law and the need to understand its application for the well being of all of human kind.</p>
+                      <p>In today's world the main challenges is to increase the student’s analytical and problem solving skills. The course helps students to strategise their legal requirements and communicate it effectively.</p>
+                      <p>The institute strives to create an atmosphere inspiring professional learning by providing state of the art infrastructure and excellent faculty with both academic and professional experience.</p>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="pills-admission" role="tabpanel" aria-labelledby="pills-admission-tab">
+                    <p><b>Acharya Law School</b> understands that the main challenges of legal education in today's world are not just the contextual underpinnings of the law but also about increasing student skills. Students are expected to strategise their legal requirements and communicate it effectively.</p>
+                    <p>Generally getting admission into law schools requires clearing the eligibility criteria and the selection process. ABBS School Of Law Fees isvery crisp and clear compared to other law schools in Bangalore. The college has in a very short span of time set up a fully fledged campus with all the necessary infrastructure and provisions. All this makes taking up law programmes in the institute very attractive especially with the affordability tag.</p>
+                    <h6>ABBS Law college Eligibility for Admission</h6>
+                    <p>Reservation for the SC/ST and other backward classes shall be made in accordance with the directions of the Government in force from time to time.</p>
+                    <ul>
+                      <li>
+                        <span class="fa-li"><i class="fas fa-angle-right"></i></span>Transfer Certificate from the previous Institution.
+                      </li>
+                      <li>
+                        <span class="fa-li"><i class="fas fa-angle-right"></i></span>Original Marks score card of P.U.C/12th/10+2, SSLC/10th class.
+                      </li>
+                      <li>
+                        <span class="fa-li"><i class="fas fa-angle-right"></i></span>Two Stamp size and Five Passport size photographs.
+                      </li>
+                      <li>
+                        <span class="fa-li"><i class="fas fa-angle-right"></i></span>Students outside the state of Karnataka will require the migration Certificate.
+                      </li>
+                    </ul>
+                    <p>The BBA LLB programme is a five year programme with each year comprising two semesters. Each semester shall span a total of eighteen weeks. The teaching process shall be in line with the rules set by the Bar Council of India Rules.</p>
+                  </div>
+                  <div class="tab-pane fade" id="pills-placement" role="tabpanel" aria-labelledby="pills-placement-tab">
+                    <p><b>ABBS School Of Law Placements</b> chapter is yet to be written but from the analysis, the college is expected to perform on par with the best law schools in Bangalore if not even better. The career prospects in law appear to be really attractive. Trends depict a constant rise in the number of litigations and this has created a great number of opportunities for practitioners in law.</p>
+                    <p>Bachelor of Business Administration - Bachelor of Legislative Law (BBA LLB) is one of the most sought after courses in law. Being an integrated course that takes 5 years to complete it has great value in the market. Students who take up the course will get a taste of both worlds, the world of business and law.</p>
+                    <p>Some of the companies which students could opt for include names like ACC Cement, Bajaj Allianz, Bharti Airtel, Clutch Group, Coca Cola, BNP Paribas, Accelya Kale Solutions, Aditya Birla Group, Bodhi Global, CIPLA, CPA, Global Noida, GVK, H Energy, HDFC Ergo, Ernst &amp; Young, Deloitte USI, Eclerx and JM Financial among others. After course completion students can opt to join law firms as well if they should choose. <a href="https://www.iesonline.co.in/abbs-school-of-law-reviews">ABBS School Of Law Reviews</a> are very promision and it is expected that the college will keep adding to its improvements due to being headed by a highly experienced and farsighted management.</p>
+                  </div>
+                  <div class="tab-pane fade" id="pills-courses" role="tabpanel" aria-labelledby="pills-courses-tab">
+                    <p>Study of law has been the prefered choice of many aspiring students across the nation and it still is. That being said with time the type of courses in demand have changed. Today the <b>ABBS School Of Law Course</b>, BBA LLB or (Bachelor of Business Administration - Bachelor of Legislative Law) is in great demand. This is an integrated five year programme that has a lot to offer the aspiring student of law. The corporate world has witnessed a paradigm shift in the number of lawsuits and litigations filed annually. With the government of India tightening its whip on violators of law and its new and stricter rules and regulations have also fueled this growth.</p>
+                    <p>Skilled legal practitioners are always in demand regardless the economic scenario. Bangalore is a great metropolitan city that receives a huge chunk of investments that flows into the nation each year. The city is also known as the silicon valley of India with stands host to massive number or Information Technology companies. The rise in the number of private companies have led to a proportional rise in the number of litigations filed each year.</p>
+                    <p><a href="#">ABBS School Of Law Placements</a> are expected to be in line with the reputation of the college. Students who graduate from this college of law have the opportunity of pursuing their career as a :</p>
+                    <p><b>The job opportunities for a graduate of BBA LLB is enlisted below:</b></p>
+                    <ul class="fa-ul land-list">
+                      <li>Legal Advisor</li>
+                      <li>Associate legal advisor</li>
+                      <li>Attorney General</li>
+                      <li>Solicitor</li>
+                      <li>Business consultant</li>
+                      <li>Magistrate</li>
+                      <li>Paralegal Assistant</li>
+                      <li>Law reporter</li>
+                      <li>Legal Consultant</li>
+                    </ul>
+                  </div>
+                  <div class="tab-pane fade" id="pills-ranking" role="tabpanel" aria-labelledby="pills-ranking-tab">
+                    <p>The vision of the college from the very beginning was to make Legal education a preferred course of learning for students who possess a great level of judgement and intellect. The education system tries to develop in its students a sense of moral, social and ethical responsibility in the discharge of their duty in the profession of their choice.</p>
+                    <p>The system tries to cultivate a sense of responsibility in students and teach them the universal nature of law. <b>Acharya Law School</b> tries to help students understand applications of law and its use for the well being of all of humankind.</p>
+                    <p>The main challenges of legal education in today's world are not just contextual underpinnings of the law but also to help students to take an analytical approach to problem solving. It is also expected of students to effectively strategise their legal requirements and communicate in line with the legal context.</p>
+                    <h6>Factors that have positively contributed to Ranking</h6>
+                    <p>A number of factors determine the <b>ABBS School Of Law Rankings</b>.</p>
+                    <ul>
+                      <li>The college is affiliated to the KSLU (Karnataka State Law University)</li>
+                      <li>The institute has been approved by the BCI (Bar Council of India)</li>
+                      <li>State of the art infrastructure like Moot Court halls, Libraries etc. that even rivals even the best law schools in the country.</li>
+                      <li>Presence of a highly qualified, experienced and competent faculty.</li>
+                      <li>A really attractive and fully functional campus with all facilities and amenities.</li>
+                      <li>A placement department with a strong focus on student career development.</li>
+                    </ul>
+                    <p><b>Acharya Law School</b> is not a very old law school but it is one that has heavily invested in developing its infrastructure. This law college has one of the best Moot Court Halls, Libraries with the best books, journals etc. and power backup facilities among others which helps it compete with other top level law colleges in the country. The college also has world class faculty who are the alumni of the best law schools in the nation. They are highly experienced and competent enough to lead students and develop them into great professionals of law. The learning process at this institute is done in a manner that gives priority to practical and experiential processes. The management at the top of this institute is perfectly capable of leading the college given their high degree of experience.</p>
+                  </div>
+                  <div class="tab-pane fade" id="pills-review" role="tabpanel" aria-labelledby="pills-review-tab">
+                    <p>Since independence the country has developed by leaps and bounds. But it was only after 1990 when the economy was liberalised the country experienced the biggest growth. This growth of enterprise has led to an increase in the need for skilled practitioners of law. The ABBS School Of Law Bangalore was set up in the year (2018 - 2019) with the sole intention of bridging this gap. The establishment that has been affiliated to the Karnataka State Law University. It has also been approved by the BCI or the Bar Council of India (New Delhi).</p>
+                    <p>The vision from the very beginning was to make Legal education a preferred course of learning for all aspiring students with an above average level of judgement and intellect. The education system followed at this law school tries to nurture in its students a sense of moral, social and ethical responsibility as far as discharge of their professional duties are concerned.</p>
+                    <p><b>Acharya Law School</b> tries to cultivate a sense of responsibility in its students and tries to teach them the universal nature of law. Helping students understand applications of law and its use for the well being of all of humankind is a top priority here.</p>
+                    <p>The institute focused on creating an environment which inspires professional learning by providing top of the line infrastructure, proficient teaching staff who are both highly qualified and experienced.</p>
+                    <p>In a very short period of time the college has managed to build a ton of positive reviews from the student community and industry alike. Let's look into some of the <b>ABBS School Of Law Reviews</b> given below.</p>
+                    <p><b>Academics:</b></p>
+                    <p>The institute takes its quality of education very seriously. The management at ABBS is heavily focused on developing a firm and well founded academic process. The teaching faculty makes students go through an experiential learning process. The curriculum followed here is designed with careful industrial consultations. The college also makes sure to keep its teachings relevant with changes in the judicial landscape of the country. This is done so that students remain professionally updated after they graduate. Overall the college is performing well on the academic frontiers.</p>
+                    <p><b>Hostels:</b></p>
+                    <p>This law school has made arrangements taking into consideration the food and accommodation of its students. These facilities are neat and well maintained to promote an ambience that favours learning. Students are provided with hygienically prepared food that meets the quality and taste expectations of most of them.</p>
+                    <p><b>Placements:</b></p>
+                    <p><a href="https://www.iesonline.co.in/abbs-school-of-law-placements">ABBS School Of Law Placements</a> are expected to be in line with student expectations. The institute provides strong pre placement training preparing students for a sound career.</p>
+                    <p><b>Faculty:</b></p>
+                    <p>Although the college has been newly established, the management has made sure to choose faculty wisely. Those who teach law at this college are highly experienced and guide students by following a very practical approach. The faculty at this college are among the best minds in the field of law. Faculty at the institute promote an out of the box thought process.</p>
+                    <p><b>Infrastructure:</b></p>
+                    <p>The law school has infrastructure that rivals even the best law schools in the country. Its libraries are enriched with a vast collection of journals, books and e-journals with a number of periodicals and magazines. The college has presentation rooms, moot court halls and all other facilities needed for a school of law.</p>
+                    <p><b>Fee Structure:</b></p>
+                    <p>Acharya Law School Fee Structure is attractive to any student who comes knocking on its doors. The ROI after landing a job as a practitioner of law is quite good.</p>
+                    <p><b>Campus Life:</b></p>
+                    <p>Overall students have a number of opportunities for recreation and learning. The law college has students coming from all parts of the country. Rich, diverse and peaceful are words used to describe the campus.</p>
+                    <p><b>Ranking:</b></p>
+                    <p><b>ABBS School Of Law Rankings</b> are quite great for a new college. The college has been affiliated to the Karnataka State Law University and has also been approved by the BCI or the Bar Council of India in New Delhi.</p>
+
+                    <div class="tab-pane fade" id="pills-fee-structure" role="tabpanel" aria-labelledby="pills-fee-structure-tab">
+                      <div class="inner">
+                        <p><b>ABBS School Of Law Bangalore</b> is a relatively new entrant in the education space and was set up in the year 2018-2019. India has been witnessing a rise in the number of job openings for law professionals. The college was founded with the intention of bridgingindustrygap. It has been affiliated to the Karnataka State Law University. It has also been approved by the Bar Council of India.</p>
+                        <p>The college has a vision to make Legal education as one of the preferred courses installing a great judgement and intellectin the students.</p>
+                        <p><b>Acharya Law School</b> management has a great deal of experience and maintains great ties with industry. Under their leadership the college has managed to level the playground where it can lock horns with the <a href="https://www.iesonline.co.in/top-law-colleges-in-bangalore">best law schools in Bangalore</a>. The institute’s rise to prominence is extraordinary.</p>
+                        <p>The institute strives to promote an atmosphere to inspire professional learning by providing cutting edge infrastructure and a competent faculty to meet student’s careers.</p>
+                        <div class="table-responsive w-custom mx-auto">
+                          <table class="table table-bordered text-justify">
+                            <thead>
+                              <tr class="bg--primary text--light">
+                                <th colspan="2"><i class="me-2" aria-hidden="true"></i>ABBS School of Law Fee Structure (Overall) (In Rs.)</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>BBA., LLB</td>
+                                <td>81,000/year</td>
+                              </tr>
+                              <tr>
+                                <td>University &amp; other fee</td>
+                                <td>3,500</td>
+                              </tr>
+                              <tr>
+                                <td>Miscellaneous</td>
+                                <td>25,000</td>
+                              </tr>
+                              <tr>
+                                <td>Student Kit</td>
+                                <td>24,000</td>
+                              </tr>
+                              <tr>
+                                <td>Health &amp; Fitness</td>
+                                <td>25,000</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <p>One of the most discouraging as-pects of great law schools is their programme fee structure. As indian students are most susceptible to changes in fee structure, ABBS college has taken a very comprehensive approach in this matter. There are a number of established law schools in Bangalore but ABBS is a great choice for students who want to be part of an institute that is headed by a management who can give those Indian ivy league law schools a run for their money. <b>Acharya Law School Fee Structure</b> falls in on the fair side of things for many reasons.</p>
+                        <p><b>Things about ABBS college of law that makes it worth joining here:</b></p>
+                        <ul>
+                          <li>In spite of being a relatively new entrant the college has made huge investments in its infrastructure.</li>
+                          <li>The campus has round the clock Wi-Fi and internet connectivity.</li>
+                          <li>The college provides its students with access to a library that has access to a number of resources like books, journals, foreign reports and back volumes.</li>
+                          <li>The institute also has a Moot court hall to help its students develop the skill of advocacy and to train them in forging strong arguments, Moot Court Competitions are held regularly.</li>
+                          <li>The college has a fully functional computer lab access to online Law Journals which can help students update themselves with current affairs and even reading and writing articles to renewed journals.</li>
+                          <li>Legal Aid Clinic at ABBS School of Law is an important part in the learning life of law students. The Law school offers its students the opportunity to communicate with the general public and provide deserving members with legal guidance to their problems.</li>
+                          <li>The college also understands the importance of internships as per the norms set by the BCI.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="course-single__additional-info bg--info">
+                  <p class="mb-0 text--para fw--semibold">For detailed information about ABBS School Of Law Admission Contact &nbsp;<a href="tel:+91-9513999535">+91-9513999535</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-3">
+              <div class="form-container bg--primary p-3 box-shadow border-radius">
+                <div class="p-1">
+                  <h4 class="text--light mb-3">Apply Now</h4>
+                  <form action="#" class="enquiry-form form">
+                    <div class="form__field">
+                      <input type="text" name="enq_full_name" placeholder="Enter your full name" required />
+                      <span class="field-icon"><i class="fa-solid fa-user"></i></span>
+                    </div>
+                    <div class="form__field">
+                      <input type="email" name="enq_email" placeholder="Enter your email" required />
+                      <span class="field-icon"><i class="fa-solid fa-envelope"></i></span>
+                    </div>
+                    <div class="form__field">
+                      <input type="tel" name="enq_phone_number" placeholder="Enter your phone number" required />
+                      <span class="field-icon"><i class="fa-solid fa-phone"></i></span>
+                    </div>
+                    <div class="form__field">
+                      <select class="form-select w-100" id="collegeSingleSelectCourse" name="enq_select_course" data-placeholder="Select Course" required>
+                        <option></option>
+                        <option>Diploma in Pharmacy</option>
+                        <option>MBBS Courses</option>
+                        <option>Engineering Courses</option>
+                        <option>Hotel Management Courses</option>
+                        <option>B.Sc Nursing</option>
+                      </select>
+                      <span class="field-icon"><i class="fa-solid fa-book"></i></span>
+                    </div>
+                    <div class="form__field">
+                      <input type="text" name="enq_college_name" value="Acharya Law School" disabled />
+                      <span class="field-icon"><i class="fa-solid fa-building-columns"></i></span>
+                    </div>
+                    <button type="submit" class="button button-secondary d-block w-100 text-nowrap">Grab Your Future</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bg--white text-center py-4 px-3 px-lg-4 border-custom-1 college-single__disclaimer-text">
+            <p class="mb-0 text--para text--sm fw--medium"><span class="text-danger text--lg">*</span>The information provided here is best to our knowledge. We do not guarantee the aptness of information. We would recommend to verify the information from Institute’s website as there could be changes from time to time. The above information is for students community in large and does not mean that we provide management quota admission in ABBS School Of Law. There is no process for direct admission. Except Foreign / NRI Quota admission in ABBS School Of Law, all other admissions takes place through College selection process only.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer bg--alternative-dark">
+      <div class="site-footer__top section--py bg--primary">
+        <div class="container">
+          <div class="quick-links-container d-grid">
+            <div class="link-container">
+              <a href="#" class="d-block">Login</a>
+            </div>
+            <div class="link-container">
+              <a href="#" class="d-block">Register</a>
+            </div>
+            <div class="link-container">
+              <a href="#" class="d-block">Login</a>
+            </div>
+            <div class="link-container">
+              <a href="#" class="d-block">Career</a>
+            </div>
+            <div class="link-container">
+              <a href="#" class="d-block">Download</a>
+            </div>
+            <div class="link-container">
+              <a href="#" class="d-block">Feedback</a>
+            </div>
+            <div class="link-container">
+              <a href="#" class="d-block">Media</a>
+            </div>
+            <div class="link-container">
+              <a href="#" class="d-block">ERP Login</a>
+            </div>
+            <div class="link-container">
+              <a href="#" class="d-block">Privacy Policy</a>
+            </div>
+            <div class="link-container">
+              <a href="#" class="d-block">Terms & Condition</a>
+            </div>
+            <div class="link-container">
+              <a href="#" class="d-block">Sitemap</a>
+            </div>
+            <div class="link-container">
+              <a href="#" class="d-block">Faqs</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="site-footer__middle section--py">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-6 col-lg-4 col-xl-4 text-center text-md-start mb-4 mb-lg-0 mt-3 mt-md-0 site-footer__col">
+              <h4 class="text--light mb-3 mb-xl-4 text-uppercase">Top Universities in India</h4>
+              <ul class="site-footer-menu mt-lg-1 mt-xl-2">
+                <li class="site-footer-menu__item">
+                  <a href="#" class="site-footer-menu__item--link">Techno India University</a>
+                </li>
+                <li class="site-footer-menu__item">
+                  <a href="#" class="site-footer-menu__item--link">Guru Nanak Institute of Technology</a>
+                </li>
+                <li class="site-footer-menu__item">
+                  <a href="#" class="site-footer-menu__item--link">KPC Medical College and Hospital</a>
+                </li>
+                <li class="site-footer-menu__item">
+                  <a href="#" class="site-footer-menu__item--link">J. G. Institute of Medical Sciences and Hospital</a>
+                </li>
+                <li class="site-footer-menu__item">
+                  <a href="#" class="site-footer-menu__item--link">Eminent College of Pharmaceutical Technology</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 col-xl-4 text-center text-md-start mb-4 mb-lg-0 mt-3 mt-md-0 mt-xl-0 site-footer__col">
+              <h4 class="text--light mb-3 mb-xl-4 text-uppercase">Top Colleges in India</h4>
+              <ul class="site-footer-menu mt-lg-1 mt-xl-2">
+                <li class="site-footer-menu__item">
+                  <a href="#" class="site-footer-menu__item--link">St. Xavier's College</a>
+                </li>
+                <li class="site-footer-menu__item">
+                  <a href="./contact-us.html" class="site-footer-menu__item--link">NIPS Hotel Management</a>
+                </li>
+                <li class="site-footer-menu__item">
+                  <a href="#" class="footer-menu__item--link">International Institute of Hotel Management</a>
+                </li>
+                <li class="site-footer-menu__item">
+                  <a href="#" class="footer-menu__item--link">G. N. Institute of Pharmaceutical Science & Technology</a>
+                </li>
+                <li class="site-footer-menu__item">
+                  <a href="#" class="footer-menu__item--link">BCDA College of Pharmacy and Technology</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-12 col-md-12 col-lg-4 col-xl-4 text-center text-md-start mb-md-4 mt-md-3 mt-lg-0 mb-md-0 pe-lg-4 site-footer__col">
+              <div class="d-md-flex d-lg-inline-block">
+                <a href="#" class="site-footer__logo d-inline-block mb-4">
+                  <img src="./assets/images/logo.png" alt="Logo" />
+                </a>
+                <div class="ps-md-4 ps-lg-0">
+                  <p class="text--light fw--semibold mb-4">11D/31/1, Street Number 1111, New town, Kolkata, West Bengal - 700156. QUBE.( 10TH FLOOR)</p>
+                  <p><a href="tel:9831842665" class="site-footer__contact--phone fw--semibold">9831842665</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <div class="container">
+          <div class="row justify-content-center justify-content-lg-between align-items-center">
+            <p class="text--light-muted mb-0 text-center text--sm d-inline-block w-auto mb-2 mb-lg-0">Copyright © 2022 by Promote Education</p>
+            <ul class="social-icons d-flex w-auto">
+              <li>
+                <a href="#" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Toast Notification -->
+      <div class="position-fixed p-3 toast-container" style="z-index: 2000">
+        <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+          <span class="status-highlighter"></span>
+          <div class="toast-header justify-content-end px-2 pt-2 pb-0">
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+          <div class="toast-body p-3">
+            <span class="toast-body__icon me-2"></span>
+            <span class="toast-body__text text--heading fw--semibold"></span>
+          </div>
+        </div>
+      </div>
+
+      <a href="javascript:void(0)" class="scroll-to-top-button"><i class="fa-solid fa-chevron-up"></i></a>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
+    <script src="./assets/vendors/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/2d537fef4a.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-image-zoom/js-image-zoom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+    <script src="./assets/vendors/youtube-video-popup/youtube-overlay.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.counterup@2.1.0/jquery.counterup.min.js"></script>
+    <script src="./assets/vendors/jquery-nice-select-master/js/jquery.nice-select.min.js"></script>
+    <script src="./assets/vendors/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <script src="./assets/vendors/price-range-slider/price-range-slider.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
